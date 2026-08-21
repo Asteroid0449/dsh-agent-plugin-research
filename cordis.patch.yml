@@ -1,0 +1,5 @@
+- insert:
+    - id: agent-plugin-research
+      name: 'dsh-agent-plugin-research'
+      config:
+        indexes: []

@@ -1,0 +1,53 @@
+{
+  "name": "dsh-agent-plugin-research",
+  "version": "0.5.1",
+  "description": "Agent 专用的 DSH 插件检索、审计、安装与验证工具桥；不提供可视化市场界面。",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asteroid0449/dsh-agent-plugin-research.git"
+  },
+  "homepage": "https://github.com/Asteroid0449/dsh-agent-plugin-research#readme",
+  "bugs": {
+    "url": "https://github.com/Asteroid0449/dsh-agent-plugin-research/issues"
+  },
+  "type": "module",
+  "main": "lib/index.js",
+  "files": [
+    "lib/index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.19.0",
+    "dsh": ">=0.1.0-rc.8"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "plugin",
+    "research",
+    "agent-tools"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1"
+  },
+  "dependencies": {
+    "semver": "^7.7.2"
+  },
+  "scripts": {
+    "test": "node --test"
+  },
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  }
+}
